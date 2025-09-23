@@ -14,7 +14,7 @@ function App() {
       <div className="mainContent">
         {data.map((book) => (
           <Book
-            key={book.isbn13} 
+            key={book.isbn13} // unique key prop for list rendering
             image={book.image}
             title={book.title}
             subtitle={book.subtitle}
@@ -29,6 +29,7 @@ function App() {
     </div>
   );
 }
+
 
 
 export default App;

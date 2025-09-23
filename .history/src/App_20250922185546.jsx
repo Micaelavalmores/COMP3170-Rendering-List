@@ -13,17 +13,20 @@ function App() {
       </div>
       <div className="mainContent">
         {data.map((book) => (
-          <Book
-            key={book.isbn13} 
-            image={book.image}
-            title={book.title}
-            subtitle={book.subtitle}
-            isbn13={book.isbn13}
-            price={book.price}
-            url={book.url}
-          />
+          <div className="Book" key={book.isbn13}>
+            <Book 
+              image={book.image}
+              title={book.title}
+              subtitle={book.subtitle}
+              isbn13={book.isbn13}
+              price={book.price}
+              url={book.url}
+            />
+          </div>
         ))}
-        <AddButton />
+        <div className="AddButton">
+          <AddButton />
+        </div>
       </div>
       <Footer />
     </div>

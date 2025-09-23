@@ -3,7 +3,7 @@
 function Book ({image, title, subtitle, isbn13, price, url }) {
     return (
         <div className="Book">
-            <img className='Image' src={image} alt={title} />
+            <img className='Image' src={image} alt={author} />
             <div className='BookContent'>
                 <span className="By">by</span>
                 <span className="Title">{title}</span>
